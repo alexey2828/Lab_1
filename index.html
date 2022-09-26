@@ -1,15 +1,13 @@
 <!doctype html>
-
 <html>
 <head>
   <meta charset="utf-8">
   <title>lab_1_fomin</title>
 </head>
-
-<body>
-    <center>
-    <header>
-      <table>
+  <body>
+    <div style="position: absolute; right: 20%; left: 20%;">
+      <header>
+        <table>
         <tr>
           <td>      
             <img src="https://cdn.discordapp.com/attachments/716395232807354421/888361727639584778/unknown.png" width="40" alt="img">
@@ -17,106 +15,107 @@
           <td><h3>Lab 1</h3></td>
           <td><h3>V 1</h3></td>
         </tr>
-      </table>
-        <nav>
+        </table>
+          <nav>
             <table>
-                <tr>
-                  <th><a href="#title-1">Оформленный текст</a></th>
-                  <th><a href="#title-2">Структура университета</a></th>
-                  <th><a href="#title-3">Данные курса валют</a></th>
-                  <th><a href="#title-4">Форма голосования</a></th>
-                </tr>
-              </table>
+              <tr>
+                <th><a href="#title-1">Оформленный текст</a></th>
+                <th><a href="#title-2">Структура университета</a></th>
+                <th><a href="#title-3">Данные курса валют</a></th>
+                <th><a href="#title-4">Форма голосования</a></th>
+              </tr>
+            </table>
           </nav>
       </header>
       <main>
         <div>
-          <a name="title-1"></a>
-          <h2>Оформленный текст</h2>
+          <h2 id="title-1">Оформленный текст</h2>
           Для любого натурального числа <b>n>2</b> уравнение <i>a<sup>n</sup>+b<sup>n</sup>=c<sup>n</sup></i> <b>не имеет решений</b> при целых ненулевых числах a, b, c.
         </div>
-        <div>
-          <a name="title-2"></a>
-          <h2>Структура университета</h2>
+        <div style="margin-left: auto; margin-right: auto;">
+          <h2 id="title-2">Структура университета</h2>
           <table>
-            <tr>
-              <td><b>Факультет 1</b></td>
-              <td><b>Факультет 1</b></td>
-            </tr>
-            <tr>
-              <td>
-                <ul>
-                  <li>кафедра 1</li>
-                  <li>кафедра 2</li>
-                  <li>кафедра 3</li>
-                </ul>
-              </td>
-              <td>
-                <ul>
-                  <li>кафедра 1</li>
-                  <li>кафедра 2</li>
-                  <li>кафедра 3</li>
-                </ul>
-              </td>
+          <tr>
+            <td><b>Факультет 1</b></td>
+            <td><b>Факультет 1</b></td>
+          </tr>
+          <tr>
+            <td>
+              <ul>
+                <li>кафедра 1</li>
+                <li>кафедра 2</li>
+                <li>кафедра 3</li>
+              </ul>
+            </td>
+            <td>
+              <ul>
+                <li>кафедра 1</li>
+                <li>кафедра 2</li>
+                <li>кафедра 3</li>
+              </ul>
+            </td>
 
-            </tr>
+          </tr>
           </table>
         </div>
         <div>
-          <a name="title-3"></a>
-          <h2>Данные курса валют</h2>
+          <h2 id="title-3">Данные курса валют</h2>
           <p>Валюта к гривне:</p>
           <table>
-            <tr>
-              <td>USD</td>
-              <td>HRN</td>
-              <td><b>36</b></td>
-            </tr>
-            <tr>
-              <td>EUR</td>
-              <td>HRN</td>
-              <td><b>35</b></td>
-            </tr>
-            <tr>
-              <td>PLN</td>
-              <td>HRN</td>
-              <td><b>7.4</b></td>
-            </tr>
+          <tr>
+            <td>USD</td>
+            <td>HRN</td>
+            <td><b>36</b></td>
+          </tr>
+          <tr>
+            <td>EUR</td>
+            <td>HRN</td>
+            <td><b>35</b></td>
+          </tr>
+          <tr>
+            <td>PLN</td>
+            <td>HRN</td>
+            <td><b>7.4</b></td>
+          </tr>
           </table>
         </div>
         <div>
-          <a name="title-4"></a>
+          <a id="title-4"></a>
           <h2>Форма голосования</h2>
           <p>Голосование</p>
           <input placeholder="введите имя...">
           <input placeholder="введите фамилию...">
-          <table>
-            <tr>
-              <td>За</td>
-              <td><input type="radio"></td>
-            </tr>
-            <tr>
-              <td>Против</td>
-              <td><input type="radio"></td>
-            </tr>
-            <tr>
-              <td>Воздержусь</td>
-              <td><input type="radio"></td>
-            </tr>
-          </table>
+          <form>
+        </form>
+        <form>
+          <h2>Форма голосования</h2>
+          <div>
+            <input type="radio" id="contactChoice1" name="contact" value="email">
+            <label for="contactChoice1">За</label>
+        
+            <input type="radio" id="contactChoice2" name="contact" value="phone">
+            <label for="contactChoice2">Против</label>
+        
+            <input type="radio" id="contactChoice3" name="contact" value="mail">
+            <label for="contactChoice3">Воздержусь</label>
+          </div>
+          <div>
+            <button type="submit">Submit</button>
+          </div>
+        </form>
         </div>
       </main>
       <footer>
         <h2>Footer</h2>
         <table>
-          <tr>
-            <th><a href="#title-1">Оформленный текст</a></th>
-            <th><a href="#title-2">Структура университета</a></th>
-            <th><a href="#title-3">Данные курса валют</a></th>
-            <th><a href="#title-4">Форма голосования</a></th>
-          </tr>
+        <tr>
+          <th><a href="#title-1">Оформленный текст</a></th>
+          <th><a href="#title-2">Структура университета</a></th>
+          <th><a href="#title-3">Данные курса валют</a></th>
+          <th><a href="#title-4">Форма голосования</a></th>
+        </tr>
         </table>
       </footer>
-    </center>
-</body>
+    </div>
+  </body>
 </html>
